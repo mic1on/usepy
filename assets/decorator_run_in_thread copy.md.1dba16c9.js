@@ -1,0 +1,20 @@
+import{_ as s,c as n,o as a,a as p}from"./app.5603aa3a.js";const A=JSON.parse('{"title":"","description":"","frontmatter":{"outline":"deep"},"headers":[{"level":2,"title":"使用","slug":"使用","link":"#使用","children":[]}],"relativePath":"decorator/run_in_thread copy.md","lastUpdated":1677473775000}'),l={name:"decorator/run_in_thread copy.md"},o=p(`<div class="info custom-block"><p class="custom-block-title">INFO</p><pre><code>@Author: MicLon
+@Date: 2023/02/27
+@Description: 将函数放入线程中执行
+</code></pre></div><h2 id="使用" tabindex="-1">使用 <a class="header-anchor" href="#使用" aria-hidden="true">#</a></h2><p><code>@useRunInThread</code>装饰器，用于将函数放入线程中执行</p><div class="language-python"><button title="Copy Code" class="copy"></button><span class="lang">python</span><pre class="shiki vitesse-dark vp-code-dark"><code><span class="line"><span style="color:#666666;">@</span><span style="color:#80A665;">useDecorator</span><span style="color:#666666;">.</span><span style="color:#80A665;">run_in_thread</span></span>
+<span class="line"><span style="color:#CB7676;">def</span><span style="color:#DBD7CAEE;"> </span><span style="color:#80A665;">run_in_thread</span><span style="color:#666666;">():</span></span>
+<span class="line"><span style="color:#DBD7CAEE;">  time</span><span style="color:#666666;">.</span><span style="color:#DBD7CAEE;">sleep</span><span style="color:#666666;">(</span><span style="color:#4C9A91;">1</span><span style="color:#666666;">)</span></span>
+<span class="line"><span style="color:#DBD7CAEE;">  </span><span style="color:#B8A965;">print</span><span style="color:#666666;">(</span><span style="color:#C98A7DAA;">&#39;</span><span style="color:#C98A7D;">run_in_thread</span><span style="color:#C98A7DAA;">&#39;</span><span style="color:#666666;">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#758575DD;"># 同时执行3个线程</span></span>
+<span class="line"><span style="color:#4D9375;">for</span><span style="color:#DBD7CAEE;"> i </span><span style="color:#4D9375;">in</span><span style="color:#DBD7CAEE;"> </span><span style="color:#B8A965;">range</span><span style="color:#666666;">(</span><span style="color:#4C9A91;">3</span><span style="color:#666666;">):</span></span>
+<span class="line"><span style="color:#DBD7CAEE;">  run_in_thread</span><span style="color:#666666;">()</span></span>
+<span class="line"></span></code></pre><pre class="shiki vitesse-dark vp-code-light"><code><span class="line"><span style="color:#666666;">@</span><span style="color:#80A665;">useDecorator</span><span style="color:#666666;">.</span><span style="color:#80A665;">run_in_thread</span></span>
+<span class="line"><span style="color:#CB7676;">def</span><span style="color:#DBD7CAEE;"> </span><span style="color:#80A665;">run_in_thread</span><span style="color:#666666;">():</span></span>
+<span class="line"><span style="color:#DBD7CAEE;">  time</span><span style="color:#666666;">.</span><span style="color:#DBD7CAEE;">sleep</span><span style="color:#666666;">(</span><span style="color:#4C9A91;">1</span><span style="color:#666666;">)</span></span>
+<span class="line"><span style="color:#DBD7CAEE;">  </span><span style="color:#B8A965;">print</span><span style="color:#666666;">(</span><span style="color:#C98A7DAA;">&#39;</span><span style="color:#C98A7D;">run_in_thread</span><span style="color:#C98A7DAA;">&#39;</span><span style="color:#666666;">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#758575DD;"># 同时执行3个线程</span></span>
+<span class="line"><span style="color:#4D9375;">for</span><span style="color:#DBD7CAEE;"> i </span><span style="color:#4D9375;">in</span><span style="color:#DBD7CAEE;"> </span><span style="color:#B8A965;">range</span><span style="color:#666666;">(</span><span style="color:#4C9A91;">3</span><span style="color:#666666;">):</span></span>
+<span class="line"><span style="color:#DBD7CAEE;">  run_in_thread</span><span style="color:#666666;">()</span></span>
+<span class="line"></span></code></pre></div>`,4),e=[o];function t(r,c,i,y,d,_){return a(),n("div",null,e)}const h=s(l,[["render",t]]);export{A as __pageData,h as default};
